@@ -4,8 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dead Poets Society | Mystic Summit Hackathon</title>
+<title>Dead Poets Society | Mystic Summit</title>
 
 <style>
 * {
@@ -15,115 +14,126 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #0b1120;
-    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #080b12;
+    color: #ffffff;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
 }
 
-header {
-    padding: 25px 15px;
+.container {
+    width: 100%;
+    max-width: 900px;
     text-align: center;
-    background: #111827;
-    border-bottom: 1px solid #263247;
+    padding: 60px 35px;
+    background: linear-gradient(145deg, #111827, #0b0e16);
+    border: 1px solid #293244;
+    border-radius: 24px;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.5);
 }
 
-header h1 {
-    font-size: 26px;
+.tag {
+    display: inline-block;
+    color: #c5a46d;
+    border: 1px solid #c5a46d55;
+    padding: 8px 16px;
+    border-radius: 50px;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(35px, 7vw, 68px);
     letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 15px;
 }
 
-header p {
-    color: #9ca3af;
-    margin-top: 10px;
+h1 span {
+    color: #c5a46d;
 }
 
-main {
-    max-width: 1200px;
+.subtitle {
+    color: #a8b0bf;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 600px;
     margin: auto;
-    padding: 25px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 15px;
 }
 
-.actions {
+.divider {
+    width: 70px;
+    height: 2px;
+    background: #c5a46d;
+    margin: 35px auto;
+}
+
+.buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 16px;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 20px;
+    margin-top: 35px;
 }
 
-.actions a {
+.btn {
     text-decoration: none;
-    padding: 13px 22px;
-    border-radius: 8px;
-    background: #e11d48;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.actions a:hover {
-    background: #be123c;
-    transform: translateY(-2px);
-}
-
-.viewer {
-    background: #ffffff;
+    padding: 16px 28px;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.25s;
 }
 
-.viewer iframe {
-    width: 100%;
-    height: 80vh;
-    min-height: 550px;
-    border: none;
-    display: block;
+.primary {
+    background: #c5a46d;
+    color: #080b12;
 }
 
-.note {
-    text-align: center;
-    color: #9ca3af;
-    margin-top: 15px;
-    font-size: 14px;
-    line-height: 1.6;
+.primary:hover {
+    background: #e0bf86;
+    transform: translateY(-3px);
 }
 
-.note a {
-    color: #60a5fa;
-    text-decoration: none;
+.secondary {
+    color: #ffffff;
+    border: 1px solid #394459;
+    background: #151b27;
 }
 
-.note a:hover {
-    text-decoration: underline;
+.secondary:hover {
+    background: #222b3a;
+    transform: translateY(-3px);
 }
 
-footer {
-    text-align: center;
-    padding: 22px;
-    color: #9ca3af;
-    font-size: 13px;
+.footer {
+    margin-top: 45px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #687386;
 }
 
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 21px;
+    .container {
+        padding: 40px 22px;
     }
 
-    main {
-        padding: 12px;
+    .buttons {
+        flex-direction: column;
     }
 
-    .viewer iframe {
-        height: 70vh;
-        min-height: 400px;
-    }
-
-    .actions a {
+    .btn {
         width: 100%;
-        text-align: center;
     }
 }
 </style>
@@ -131,53 +141,44 @@ footer {
 
 <body>
 
-<header>
-    <h1>DEAD POETS SOCIETY</h1>
-    <p>Mystic Summit Hackathon</p>
-</header>
+<div class="container">
 
-<main>
+    <div class="tag">MYSTIC SUMMIT • HACKATHON</div>
 
-    <div class="actions">
+    <h1>DEAD POETS<br><span>SOCIETY</span></h1>
 
-        <a href="presentation.pptx" download>
-            Download Presentation
+    <p class="subtitle">Ideas. Innovation. Imagination.</p>
+
+    <div class="divider"></div>
+
+    <p class="description">
+        Welcome to Dead Poets Society — a presentation created for
+        Mystic Summit. Explore our presentation in full view or download
+        the original PowerPoint for offline access.
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn primary"
+           href="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx&embedded=0"
+           target="_blank"
+           rel="noopener noreferrer">
+           Open Presentation ↗
         </a>
 
-        <a href="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
-           target="_blank">
-            Open Full Viewer
-        </a>
-
-        <a href="presentation.pptx" target="_blank">
-            Open Original PPTX
+        <a class="btn secondary"
+           href="presentation.pptx"
+           download>
+           Download PPTX ↓
         </a>
 
     </div>
 
-    <div class="viewer">
-
-        <iframe
-            src="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
-            title="Dead Poets Society Presentation"
-            allowfullscreen>
-        </iframe>
-
+    <div class="footer">
+        DEAD POETS SOCIETY &nbsp; | &nbsp; MYSTIC SUMMIT
     </div>
 
-    <div class="note">
-        If the presentation doesn't load inside this page,
-        <a href="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
-           target="_blank">
-            open the presentation directly in Google Viewer.
-        </a>
-    </div>
-
-</main>
-
-<footer>
-    Dead Poets Society | Mystic Summit Hackathon
-</footer>
+</div>
 
 </body>
 </html>
