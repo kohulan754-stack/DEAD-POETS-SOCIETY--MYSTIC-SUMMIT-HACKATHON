@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dead Poets Society | Mystic Summit</title>
+
+<title>Dead Poets Society | Mystic Summit Hackathon</title>
 
 <style>
 * {
@@ -21,67 +22,109 @@ body {
 }
 
 header {
-    padding: 22px;
+    padding: 25px 15px;
     text-align: center;
     background: #111827;
     border-bottom: 1px solid #263247;
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 26px;
     letter-spacing: 2px;
 }
 
 header p {
     color: #9ca3af;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 main {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
-    padding: 24px;
-}
-
-.viewer {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-iframe {
-    width: 100%;
-    height: 75vh;
-    min-height: 450px;
-    border: none;
+    padding: 25px;
 }
 
 .actions {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 12px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .actions a {
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 13px 22px;
     border-radius: 8px;
     background: #e11d48;
     color: white;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .actions a:hover {
     background: #be123c;
+    transform: translateY(-2px);
+}
+
+.viewer {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.viewer iframe {
+    width: 100%;
+    height: 80vh;
+    min-height: 550px;
+    border: none;
+    display: block;
+}
+
+.note {
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.note a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.note a:hover {
+    text-decoration: underline;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 22px;
     color: #9ca3af;
     font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    .viewer iframe {
+        height: 70vh;
+        min-height: 400px;
+    }
+
+    .actions a {
+        width: 100%;
+        text-align: center;
+    }
 }
 </style>
 </head>
@@ -95,21 +138,39 @@ footer {
 
 <main>
 
-<div class="actions">
-    <a href="presentation.pptx" download>
-        Download Presentation
-    </a>
+    <div class="actions">
 
-    <a href="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx" target="_blank">
-        Open Full Viewer
-    </a>
-</div>
+        <a href="presentation.pptx" download>
+            Download Presentation
+        </a>
+
+        <a href="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
+           target="_blank">
+            Open Full Viewer
+        </a>
+
+        <a href="presentation.pptx" target="_blank">
+            Open Original PPTX
+        </a>
+
+    </div>
 
     <div class="viewer">
+
         <iframe
-            src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
+            src="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
+            title="Dead Poets Society Presentation"
             allowfullscreen>
         </iframe>
+
+    </div>
+
+    <div class="note">
+        If the presentation doesn't load inside this page,
+        <a href="https://docs.google.com/gview?url=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
+           target="_blank">
+            open the presentation directly in Google Viewer.
+        </a>
     </div>
 
 </main>
