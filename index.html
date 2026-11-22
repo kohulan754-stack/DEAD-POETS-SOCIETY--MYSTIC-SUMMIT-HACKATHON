@@ -44,15 +44,15 @@ main {
 }
 
 .viewer {
-    background: #ffffff;
+    background: white;
     border-radius: 12px;
     overflow: hidden;
-    min-height: 75vh;
 }
 
 iframe {
     width: 100%;
     height: 75vh;
+    min-height: 450px;
     border: none;
 }
 
@@ -96,13 +96,19 @@ footer {
 <main>
 
     <div class="actions">
-        <a href="presentation.pptx" download>Download Presentation</a>
-        <a href="https://docs.google.com/gview?embedded=1&url=https://kohulan754-stack.github.io/DEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON/presentation.pptx" target="_blank">Open Full Viewer</a>
+        <a href="presentation.pptx" download>
+            Download Presentation
+        </a>
+
+        <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx" target="_blank">
+            Open Full Viewer
+        </a>
     </div>
 
     <div class="viewer">
         <iframe
-            src="https://docs.google.com/gview?embedded=1&url=https://kohulan754-stack.github.io/DEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON/presentation.pptx">
+            src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fkohulan754-stack.github.io%2FDEAD-POETS-SOCIETY--MYSTIC-SUMMIT-HACKATHON%2Fpresentation.pptx"
+            allowfullscreen>
         </iframe>
     </div>
 
